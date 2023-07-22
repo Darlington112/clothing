@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+.section-margin-1{
+   margin-top: 30px;
+}
+
 .btn-normal{
     border: none;
     background-color:#fff;
@@ -214,7 +218,7 @@ body{
  }
  #newsletter .news-container{
     width: 90%;
-    height: 40vh;
+    height: 60vh;
     background-color: rgba(76, 0, 255, 0.795);
     display: flex;
     flex-wrap: wrap;
@@ -342,6 +346,152 @@ body{
  #close{
    display: none;
  }
+
+ /* Shop Page */
+
+ #feature .feature-container{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 40px;
+ }
+ #feature h2{
+   text-align: center;
+   font-size: 50px;
+   font-weight: 800;
+   margin-bottom: 10px;
+ }
+ .feature-container div{
+   flex: 1;
+ }
+ .feature-container div h5{
+   text-align: center;
+   background-color: rgba(223, 6, 187, 0.795);
+   color: #dfedea;
+   font-weight: 600;
+   padding: 5px;
+   margin-right: 50px;
+   font-size: 15px;
+ }
+ .feature-container div:nth-child(2) h5{
+   background-color: #056e09;
+ }
+ .feature-container div:nth-child(3) h5{
+   background: hsl(170deg, 60%, 45%);
+ }
+ .feature-container div:nth-child(4) h5{
+   background-color: #f05959;
+ }
+ .feature-container div:nth-child(5) h5{
+   background-color: #78e710;
+ }
+ .feature-container div:nth-child(6) h5{
+   background-color: #6e03e9;
+ }
+
+ #product-1{
+   margin-top: 10%;
+   margin-bottom: 5%;
+ }
+ #product-1 .product-container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+   padding: 20px;
+   margin: 0px 20px;
+ }
+ .product-title h2{
+   text-align: center;
+   border-bottom: 1px transparent;
+   border-style: inset;
+   padding: 5px;
+   font-weight: 900;
+   color: #056e09;
+ }
+ .product-container div{
+   position: relative;
+   margin: 0px 30px;
+   border: 1px solid #555;
+   border-radius: 30px;
+ }
+ .product-container div img{
+   width: 80%;
+   height: 70%;
+   border: 1px solid #555;
+   padding: 30px;
+   margin: 20px;
+   border-radius: 20px;
+ }
+ .product-container div img:hover{
+   transform: translate3d(-5px, -5px, 50px);
+   cursor: pointer;
+ }
+ .product-container div h4{
+   padding-left: 20px;
+ }
+ .product-container div h5{
+   padding-left: 20px;
+ }
+ .product-container div i{
+   position: absolute;
+   right: 10%;
+   bottom: 10%;
+   cursor: pointer;
+ }
+
+ .news-container textarea{
+   margin-top: 5px;
+   width: 90%;
+   height: 130px;
+   outline: none;
+   border: none;
+ } 
+ .form .shop-btn{
+   margin-top: 5px;
+   background-color: #6e03e9;
+ }
+ #newsletter .message-box{
+   background-color: hsl(138, 90%, 15%);
+   border-radius: 5px;
+ }
+
+
+
+ .swiper-shop{
+   padding: 20px;
+   margin: 0px 20px 30px 20px;
+ }
+
+ .swiper-slide{
+   padding: 20px 30px;
+   border: 1px transparent #666;
+   border-radius: 20px;
+   position: relative;
+ }
+ .swiper-slide h3{
+   position: absolute;
+   top: 10%;
+   left: 15%;
+   border: 1px solid #f05959;
+   border-radius: 50%;
+   padding: 2px;
+   background: #f05959;
+   color: #fff;
+   font-size: 20px;
+ }
+ .swiper-slide img{
+   border: 1px solid #666;
+   border-radius: 10px;
+   padding: 20px;
+ }
+ .swiper-slide h4,
+ .swiper-slide h6,
+ .swiper-slide a{
+   font-size: 20px;
+   line-height: 1.5rem;
+   margin-top: 3px;
+   padding-left: 40px;
+ }
+ 
 
  /* Media querrry for ipad mini */
 
@@ -498,7 +648,7 @@ body{
 }
 #newsletter .news-container {
    width: 100%;
-   height: 70vh;
+   height: 80vh;
    flex-direction: column;
    flex-wrap: nowrap;
    align-items: center;

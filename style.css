@@ -52,6 +52,7 @@ li{
 }
 a{
     text-decoration: none;
+   
 }
 body{
     width: 100vw;
@@ -64,6 +65,8 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100;
+   
 }
 #nav-bar .nav-container{
     width: 100%;
@@ -391,6 +394,7 @@ body{
  #product-1{
    margin-top: 10%;
    margin-bottom: 5%;
+   position: relative;
  }
  #product-1 .product-container {
    display: grid;
@@ -399,6 +403,21 @@ body{
    padding: 20px;
    margin: 0px 20px;
  }
+ #product-1 .search{
+   position: absolute;
+   top: 1%;
+   right: 5%;
+ }
+ .search i{
+   margin-left: -40px;
+ }
+ #search-bar{
+   width: 300px;
+   height: 30px;
+   border-radius: 20px;
+   padding: 15px;
+ }
+
  .product-title h2{
    text-align: center;
    border-bottom: 1px transparent;
@@ -491,6 +510,264 @@ body{
    margin-top: 3px;
    padding-left: 40px;
  }
+
+ /* Tag side */
+ #tag{
+   width: 100%;
+   margin: 30px 0px;
+ }
+ .tag-container{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px;
+   margin: 20px 30px;
+ }
+ .tag-container div{
+   flex: 1;
+   background-color: lightgray;
+   border-radius: 10px;
+   margin: 10px 20px;
+   padding: 10px 5px;
+ }
+ .tag-container div a{
+   display: inline-flex;
+ }
+ .tag-container div a img{
+   width: 70px;
+   padding-right: 20px;
+ }
+ .tag-container div a h2{
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 5px;
+ }
+  
+ /* Shop Banner */
+ #banner{
+   width: 100%;
+   height: 100vh;
+ }
+ .banner{
+   display: flex;
+   flex-direction: row-reverse;
+   margin-left: 10%;
+   margin-right: 5%;
+ }
+ .banner img{
+   width: 50%;
+   height: 70vh;
+   cursor: pointer;
+ }
+ .banner:nth-child(1) img{
+   margin-right: 30px;
+ }
+ /* Showcase page */
+
+ #display{
+   width: 80%;
+   height: 200px;
+   background: #dbdbdb;
+   margin: 30px 0px 5% 10%;
+   padding: 20px 20px 20px 40px;
+   font-size: 20px;
+   font-weight: 800;
+ }
+ #show{
+   width: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+   padding: 30px;
+   color: #ffff;
+ }
+ #show .show{
+   width: 100%;
+   height: 40vh;
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 5%;
+   border-bottom: 5px solid #dbdbdb;
+ }
+ .show img{
+   margin-bottom: 20px;
+   width: 50%;
+ }
+ #show .show:nth-child(5){
+   border: none;
+ }
+
+ /* About Page */
+ #about-body{
+   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+ }
+
+ #about-header{
+   background-color: #1a4bcf;
+   height: 50px;
+   width: 100%;
+   margin-bottom: 30px;
+   color: #fff;
+ }
+ #about-header .about-container{
+   display: flex;
+   justify-content: space-evenly;
+   padding: 10px;
+ }
+ .about-container h1{
+   font-size: 20px;
+ }
+ #about-vision .container-vision{
+   text-align: center;
+ }
+ .container-vision .mission{
+   display: inline-flex;
+ }
+ .mission li{
+   margin: 20px;
+   border-right: 1px solid #555;
+   padding: 10px 20px 10px 10px;
+   font-size: 20px;
+ }
+ .mission a:hover{
+   border-bottom: 1px solid #555;
+   width: 50px;
+ }
+
+ .contentBox{
+   position: relative;
+   width: 100%;
+   margin: 0px 120px 0px 30px;
+   padding: 5px;
+   cursor: pointer;
+ }
+
+ .contentBox .content-title{
+   background: #056e09;
+   font-size: 20px;
+   padding-left: 20px;
+   color: #fff;
+ }
+ .contentBox .content-title::before{
+   content: '+';
+   position: absolute;
+   right: 10%;
+   font-size: 1.5rem;
+ }
+ .contentBox.show .content-title::before{
+   content: '-';
+ }
+ .contentBox .content{
+   position: relative;
+   height: 0;
+   overflow: hidden;
+   transition: 0.5s;
+   padding: 0px 15px;
+ }
+ .show .content{
+   height: 50px;
+ }
+
+ #chart {
+   max-width: 800px;
+   margin: 30px auto 20px auto;
+   height: 100%;
+ }
+ #chart h1{
+   text-align: center;
+
+ }
+
+ /* Contact pages */
+ #contact{
+   width: 100%;
+   padding: 20px;
+   margin: 30px;
+ }
+ #contact h1{
+   font-size: 40px;
+ }
+ #contact .locate{
+   display: flex;
+ }
+ .contact-container{
+   margin-right: 100px;
+ }
+ .contact-container div{
+   display: flex;
+   line-height: 3rem;
+ }
+ .contact-container div i{
+   margin: 15px 10px 0px 0px;
+ }
+
+ 
+ #form form{
+   margin-top: 30px;
+ }
+ #form form p label input{
+   width: 120%;
+   height: 30px;
+   outline: 0;
+   border-radius: 4px;
+   border: 1px transparent #666;
+ }
+ #form{
+   display: flex;
+   margin: 100px 30px 0px 30px;
+   border: 1px solid #666;
+   padding: 30px;
+   margin-right: 50px;
+   justify-content: space-between;
+ }
+ #form form p label input{
+  width: 200%;
+  height: 50px;
+  outline: none;
+  border-radius: 0px 4px 4px 0px;
+  border: 0.5px solid #056e09;
+  line-height: 3rem;
+ }
+ #form form p label textarea{
+  width: 200%;
+  height: 100px;
+  outline: none;
+  border: 0.3px solid #056e09;
+  margin-top: 10px;
+ }
+ #form form p button{
+  width: 50%;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  color: #ffff;
+  background-color: var(--btn-normal);
+  outline: none;
+  border: none;
+  cursor: pointer;
+ }
+ #form form p button:hover{
+  background-color: #fff;
+  color: #666;
+ }
+ #team{
+  margin-right: 50px ;
+ }
+ #team-heading{
+  text-align: center;
+  font-size: 2rem;
+  text-shadow:#f05959 1px 1px 5px;
+  color: #056e09;
+ }
+ 
+   
+ #team div{
+   display: flex;
+   margin: 20px;
+ }
+ #team div p{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+ }
+
  
 
  /* Media querrry for ipad mini */
@@ -554,6 +831,9 @@ body{
 
  }
  @media(max-width: 360px){
+   #nav-bar{
+      width: 100%;
+   }
    #nav-bar .nav-container {
       width: 100vw;
       display: flex;
@@ -587,6 +867,7 @@ body{
    left: 20%;
 }
 #hero {
+   width: 100%;
    height: 70vh;
    background-position: top 30% right 5%;
    background-size: 100%;
@@ -714,6 +995,20 @@ body{
    padding-top: 30px;
 }
 
+/* Shop page */
+
+#feature .feature-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   
+}
+.feature-container div h5 {
+   margin-right: 0px;
+   margin-bottom: 20px;
+}
  }
 
  

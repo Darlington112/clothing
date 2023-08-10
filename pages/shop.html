@@ -26,10 +26,10 @@
             <ul id="nav-list">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#"  class="active">Shop</a></li>
-                <li><a href="#">Showcase</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./cart.html">
                     <i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
                     <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -80,102 +80,107 @@
 
     <section id="product-1" class="section-margin-1">
        <div class="product-title">
+       
         <h2>#Featured Product</h2>
+        <div class="search">
+            <input type="text"  id="search-bar" placeholder="Search..." onkeydown="search()" >
+        <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+        </div>
        </div>
-        <div class="product-container">
-            <div>
+        <div class="product-container" id="product-container">
+            <div class="product">
                 <img src="../images/products/jeans1.jpg" alt="">
-                <h4>Men's Jeans</h4>
+                <h4 class="product-name">Men's Jeans</h4>
                 <h5>$60</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
-                <img src="../images/products/polo10.jpg" alt="">
-                <h4>Men's Polo</h4>
+            <div class="product">
+                <img src="../images/products/polo6.jpg" alt="">
+                <h4 class="product-name">Men's Polo</h4>
                 <h5>$35</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/shirt8.jpg" alt="">
-                <h4>Men's Tee Shirt</h4>
+                <h4 class="product-name">Men's Tee Shirt</h4>
                 <h5>$55</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/shoe4.jpg" alt="">
-                <h4>Men's Sneaker</h4>
+                <h4 class="product-name">Men's Sneaker</h4>
                 <h5>$70</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
-                <img src="../images/products/jeans3.jpg" alt="">
-                <h4>Men's Vintage shirt</h4>
+            <div class="product">
+                <img src="../images/products/shirt9.jpg" alt="">
+                <h4 class="product-name">Men's Vintage shirt</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/trouser1.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Men's Plain trouser</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/trouser3.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Men's Plain trouser</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/trouser2.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Men's Plain trouser</h4>
                 <h5>$90</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/jeans3.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Crazy Jean</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/polo10.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Tommy Polo</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/shirt10.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Dior Shirt</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/shirt11.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Balenciaga Shirt</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/vintage2.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Vintage Top</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/shoe3.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Sneaker Jordan</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/shirt3.jpg" alt="">
-                <h4>Men's Plain trouser</h4>
+                <h4 class="product-name">Amiri Shirt</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
-            <div>
+            <div class="product">
                 <img src="../images/products/pexels-waldemar-2129970.jpg" alt="">
-                <h4>Men's Jeans</h4>
+                <h4 class="product-name">Men's Jeans</h4>
                 <h5>$80</h5>
                 <i class="fa fa-cart-plus" onclick="window.location.href='cart.html'"></i>
             </div>
@@ -193,57 +198,57 @@
             <h3>-17%</h3>
         </div>
           <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
-            <h6>$400</h6>
+            <img style="width: 90%; height: 200px;" src="../images/products/jeans10.jpg" alt="">
+            <h4>Balenciage jean</h4>
+            <h6>$300</h6>
             <a href="cart.html">Add to cart</a>
             <h3>-17%</h3>
 
           </div>
           <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
+            <img style="width: 90%; height: 200px;" src="../images/products/vintag1.jpg" alt="">
+            <h4>Amiri Vintage</h4>
+            <h6>$100</h6>
+            <a href="cart.html">Add to cart</a>
+            <h3>-17%</h3>
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 90%; height: 200px;" src="../images/products/trouser3.jpg" alt="">
+            <h4>Gucci trouser</h4>
+            <h6>$250</h6>
+            <a href="cart.html">Add to cart</a>
+            <h3>-17%</h3>
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 90%; height: 200px;" src="../images/products/shirt5.jpg" alt="">
+            <h4>Turkey Shirt</h4>
+            <h6>$50</h6>
+            <a href="cart.html">Add to cart</a>
+            <h3>-17%</h3>
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 90%; height: 200px;" src="../images/products/jeans10.jpg" alt="">
+            <h4>Gucci jean</h4>
+            <h6>$500</h6>
+            <a href="cart.html">Add to cart</a>
+            <h3>-17%</h3>
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 90%; height: 200px;" src="../images/products/vintage2.jpg" alt="">
+            <h4>Italian Vintage</h4>
+            <h6>$200</h6>
+            <a href="cart.html">Add to cart</a>
+            <h3>-17%</h3>
+          </div>
+          <div class="swiper-slide">
+            <img style="width: 90%; height: 200px;" src="../images/products/trouser5.jpg" alt="">
+            <h4>Balenciaga Trouser</h4>
             <h6>$400</h6>
             <a href="cart.html">Add to cart</a>
             <h3>-17%</h3>
           </div>
           <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
-            <h6>$400</h6>
-            <a href="cart.html">Add to cart</a>
-            <h3>-17%</h3>
-          </div>
-          <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
-            <h6>$400</h6>
-            <a href="cart.html">Add to cart</a>
-            <h3>-17%</h3>
-          </div>
-          <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
-            <h6>$400</h6>
-            <a href="cart.html">Add to cart</a>
-            <h3>-17%</h3>
-          </div>
-          <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
-            <h6>$400</h6>
-            <a href="cart.html">Add to cart</a>
-            <h3>-17%</h3>
-          </div>
-          <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
-            <h4>Amiri Polo</h4>
-            <h6>$400</h6>
-            <a href="cart.html">Add to cart</a>
-            <h3>-17%</h3>
-          </div>
-          <div class="swiper-slide">
-            <img style="width: 90%; height: 200px;" src="../images/products/polo11.jpg" alt="">
+            <img style="width: 90%; height: 200px;" src="../images/products/polo13.jpg" alt="">
             <h4>Amiri Polo</h4>
             <h6>$400</h6>
             <a href="cart.html">Add to cart</a>
@@ -261,6 +266,42 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
+
+      <section id="tag">
+        <div class="tag-container">
+            <div>
+               <a href="#">
+                 <img src="../images/tags/tag4.jpg">
+                <h2>Deals of the Day</h2>
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                  <img src="../images/tags/tag3.jpg">
+                 <h2>Top rated Brands</h2>
+             </a>
+             </div>
+             <div>
+                <a href="#">
+                  <img src="../images/tags/tag2.jpg">
+                 <h2>Wholesales Items</h2>
+             </a>
+             </div>
+             <div>
+                <a href="#">
+                  <img src="../images/tags/tag5.png">
+                 <h2>Become a Vendor</h2>
+             </a>
+             </div>
+        </div>
+      </section>
+
+      <section id="banner">
+        <div class="banner">
+            <img src="../images/showcase/PRIMERA-BANR1-1.png">
+            <img src="../images/showcase/nike-shoes-slider.jpg">
+        </div>
+      </section>
 
       <section id="newsletter">
         <div class="news-container message-box">
@@ -304,7 +345,7 @@
                 <h4><a href="#">Privacy Notice</a></h4>
                 <h4><a href="#">Payment Information Guidelines</a></h4>
                 <h4><a href="#">Cookie Notice</a></h4>
-                <h4><a href="#">Official Stores</a></h4>
+                <h4><a href="#">My Cart</a></h4>
                 <h4><a href="#">Flash Sales</a></h4> 
             </div>
             <div class="payment">
